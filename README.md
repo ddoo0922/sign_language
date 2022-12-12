@@ -37,15 +37,28 @@
 |------|---|
 <img src = "https://user-images.githubusercontent.com/74172467/206986355-4f3f9861-9657-43f3-b09a-c1a65ef630fd.png" width="400" height= "300"> |<img src = "https://user-images.githubusercontent.com/74172467/206986048-e0ecb9e3-bfcb-46ce-9460-c8d41f2f29ac.png" width="400">
 
-# ✏ 기술적인 요소
+## 📌 기술적인 요소
+
+첫 째로, 영상이미지 데이터를 기계학습에 활용할 수 있도록 벡터화하는 과정입니다.
+이후 Mediapipe를 활용하여 손의 Keypoint를 찾고 이웃 keypoint와의 각도를 계산합니다. 
+이 값을 정규화하여 csv파일로 저장합니다. 이렇게 dataset을 완성합니다.
 
 Vetorization|degree calculation| saving as CSV file
 |------|---|---|
 |<img src = "https://user-images.githubusercontent.com/74172467/206989944-d3f0c22e-f98c-48f3-93c5-12220f8061de.png" width="300">| <img src = "https://user-images.githubusercontent.com/74172467/206990213-7e46d0b4-7684-4c3b-87f1-8a68deae22df.png" width="300">| <img src = "https://user-images.githubusercontent.com/74172467/206990338-967bf9c3-913c-4303-baff-878b975e55c6.png" width="300">|
 
+## 📌 기술적인 요소 2 
 
+처음에는 기계학습 학습해보았는데 정확도가 기대 이하였습니다.
+LSTM을 사용했을 때에는 실시간적인 피드백이 어려웠습니다.
 
+따라서 DNN모델을 선택하였고 과적합을 방지하기 위해 드랍아웃과 batch normalization을 사용하였습니다.
 
+저희가 활용한 최종 학습모델은 7개의 Dense layer를 갖은 DNN으로 90초반의 정확도를 달성했습니다.
+
+DNN Architeture|Loss rating & ACC score| Dropout & batch normalization
+|------|---|---|
+|<img src = "https://user-images.githubusercontent.com/74172467/206996563-d51cb975-a4a1-488d-9fdf-68d4e703a78b.png" width="300">| <img src = "https://user-images.githubusercontent.com/74172467/206996885-e6724dea-7236-43c4-adad-69cee6f3d92c.png" width="300">| <img src = "https://user-images.githubusercontent.com/74172467/206996969-8c3ca354-a9cd-4128-a1b5-f5ad009db5de.png" width="300">|
 
 
 
