@@ -1,5 +1,11 @@
 # sign_language
 
+
+
+<p align="center"><img src="https://user-images.githubusercontent.com/74172467/207249922-1b1d9703-8481-497a-9d17-de6e589ddf6d.gif " width= "700">
+
+# 💫 Full demo on -> [Youtube](https://youtu.be/6CvHjVIJ6dA)💫
+
 ## ✏  서비스 기획과 전략
 
 서비스의 전략과 방향을 얻기 위해 수어봉사동아리 '마주보다'와 인터뷰와 사전조사를 진행하였습니다.
